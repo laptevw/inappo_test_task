@@ -12,6 +12,10 @@ class MyApp extends StatelessWidget {
     return BlocProvider(
         create: (context) => ExampleBloc(ExampleRepository()),
       child: MaterialApp(
+        theme: ThemeData(
+          primaryColor: Color(0xFF8E40A3),
+          accentColor: Color(0xFFCCAAD6),
+        ),
         home: MainScreen(),
       ),
     );
